@@ -22,17 +22,29 @@
       /* SOCIAL STYLES */
       .social-link {
         background: rgba(150, 150, 150, 0.5);
-        color: blue;
+        border-radius: 99px;
+        box-sizing: border-box;
+        color: #fff;
         display: inline-block;
-        height: 36px;
+        font-family:Helvetica, Arial, sans-serif;
+        font-size: 1rem;
+        font-weight: bold;
+        height: 2.5em;
+        line-height: 1;
+        padding-top: 0.85em;
+        text-align: center;
+        text-decoration: none;
+        vertical-align: middle;
+        width: 2.5em;
       }
       .social-list {
         list-style: none;
-        text-align: right;
+        text-align: center;
       }
 
       .social-list > li {
         display: inline-block;
+        margin: 0 0.5em;
       }
 
       /* BIO STYLES */
@@ -40,6 +52,8 @@
         font-size: 24px;
         /* height: 350px; */
         overflow: hidden;
+        margin: 0 auto 5em;
+        max-width: 960px;
       }
       /* .bio-wrapper::after {
         content: " ";
@@ -51,23 +65,35 @@
       } */
       .bio-box {
         border: 1px solid black;
+        box-sizing: border-box;
         float: left;
         font-size: 1rem;
+        margin: 40px 1% 0;
         padding: 2%;
-        width: 25%;
-        box-sizing: border-box;
+        width: 23%;
       }
       .bio-box h3 {
         font-size: 1.5em;
+        margin: -45px 0 1em;
+        color: #ffffff;
+        text-align: center;
+      }
+      .bio-box img {
+        width: 100%;
+      }
+      .bio-box .test {
+        text-align: center;
       }
       .bio-box > a {
         color: #c68bf9;
       }
       .bio-copy {
         font-size: 1em;
+        line-height: 1.5;
       }
       .bio-copy a {
         color: green;
+        padding: 20px;
       }
 
     </style>
@@ -78,13 +104,13 @@
       <h1>I'm an h1</h1>
       <ul class="social-list">
         <li>
-          <a href="https://example.com/" class="social-link">Link1</a>
+          <a href="https://example.com/" class="social-link">Fb</a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Link2</a>
+          <a href="https://example.com/" class="social-link">Tw</a>
         </li>
         <li>
-          <a href="https://example.com/" class="social-link">Link3</a>
+          <a href="https://example.com/" class="social-link">Gh</a>
         </li>
       </ul>
     </div>
@@ -93,8 +119,11 @@
 
     <div class="bio-wrapper">
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="placeholder">
         <h3>Michael Hartl</h3>
-        <a href="https://twitter.com/mhartl" class="social-link">here</a>
+        <div class="test">
+          <a href="https://twitter.com/mhartl" class="social-link">Tw</a>
+        </div>
           <div class="bio-copy">
             <p>
               Known for his dazzling charm, rapier wit, and unrivaled humility,
@@ -112,8 +141,9 @@
           </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="placeholder">
         <h3>Lee Donahoe</h3>
-        <a href="https://twitter.com/leedonahoe" class="social-link">here</a>
+        <a href="https://twitter.com/leedonahoe" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             When he's not literally swimming with sharks or hunting powder stashes on
@@ -124,8 +154,9 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="placeholder">
         <h3>Nick Merwin</h3>
-        <a href="https://twitter.com/nickmerwin" class="social-link">here</a>
+        <a href="https://twitter.com/nickmerwin" class="social-link">Tw</a>
         <div class="bio-copy">
           <p>
             You may have seen him shredding guitar live with Capital Cities on Jimmy
@@ -136,6 +167,7 @@
         </div>
       </div>
       <div class="bio-box">
+        <img src="https://placekitten.com/g/400/400" alt="placeholder">
         <h3>??</h3>
         <p>
           The Future
