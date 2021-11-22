@@ -36,6 +36,9 @@ padding: 5.5vh 60px 0 0;
   text-decoration: none;
   text-transform: uppercase;
 }
+.header-nav > li:last-child a {
+  color: #750b75;
+}
 .header-nav > li:first-child a {
   color: #ed6e2f;
 }
@@ -56,6 +59,10 @@ padding: 5.5vh 60px 0 0;
   background-color: #c7dbfc;
   height: 50vh;
 }
+.full-hero:hover, 
+.full-hero:active {
+  background-color: #a71313;
+}
 
 /* SOCIAL STYLES */
 .social-link {
@@ -74,6 +81,10 @@ padding: 5.5vh 60px 0 0;
   text-decoration: none;
   vertical-align:middle;
   width: 2.5em;
+}
+.social-link:hover, 
+.social-link:active {
+  background-color: #000;
 }
 .social-list {
   list-style: none;
