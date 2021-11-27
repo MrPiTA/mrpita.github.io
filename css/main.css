@@ -1,4 +1,8 @@
 /* GLOBAL STYLES */
+html {
+  padding: 0 30px;
+  box-shadow:0 0 0 30px #000 inset;
+}
 body {
   font-family: helvetica, arial, sans-serif;
 }
@@ -20,6 +24,9 @@ h2 ~ p {
 .header {
   background-color: #000;
   color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
 }
 .header-nav {
 float: right;
@@ -67,6 +74,7 @@ padding: 5.5vh 60px 0 0;
   text-align: center;
   padding: 10px;
   box-sizing: border-box;
+  left: -30px;
   /* margin: -55px 0 0 -55px; #1 metoda nie zapomnij o tym tricku centrowania przez pozycję absolute*/
   /* transform: translate(-50%, -50%);  */
   /* ta metoda jest lepsza niż ta #1 ^ */
@@ -83,6 +91,12 @@ padding: 5.5vh 60px 0 0;
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
+  position: relative;
+}
+.full-hero > ul
+{
+  position: absolute;
+  bottom: 0;
 }
 
 /* SOCIAL STYLES */
