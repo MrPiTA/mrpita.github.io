@@ -93,10 +93,11 @@ padding: 5.5vh 60px 0 0;
   height: 50vh;
   position: relative;
 }
-.full-hero > ul
-{
+.full-hero ul:first-of-type {
   position: absolute;
-  bottom: 0;
+  left: 50%;
+  bottom: 45%;
+  transform: translate(-50%,50%);
 }
 
 /* SOCIAL STYLES */
