@@ -96,8 +96,8 @@ padding: 5.5vh 60px 0 0;
 .full-hero ul:first-of-type {
   position: absolute;
   left: 50%;
-  bottom: 45%;
-  transform: translate(-50%,50%);
+  top: 60%;
+  transform: translate(-50%,-50%);
 }
 
 /* SOCIAL STYLES */
