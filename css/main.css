@@ -17,6 +17,10 @@ h2 ~ p {
   text-align: center;
 }
 /* HEADER STYLES */
+.header {
+  background-color: #000;
+  color: #fff;
+}
 .header-nav {
 float: right;
 padding: 5.5vh 60px 0 0;
@@ -26,42 +30,59 @@ padding: 5.5vh 60px 0 0;
   margin-left: 1em;
 }
 .header-nav > li ~ li {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
 .header-nav a {
-  color: #000;
+  color: #fff;
   font-size: 0.8rem;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
+  
 }
 .header-nav > li:last-child a {
   color: #750b75;
+}
+.header-nav > li:last-child a:hover,
+.header-nav > li:last-child a:active {
+  color: #ed6e2f;
 }
 .header-nav > li:first-child a {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a:hover {
-  color: #000;
+  color: #fff;
 }
 .header-nav a:hover,
 .header-nav a:active {
   color: #ed6e2f;
 }
+.header-logo {
+  background-color: #000;
+  position: relative;
+  height: 10vh;
+  width: 10vh;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
+  /* margin: -55px 0 0 -55px; #1 metoda nie zapomnij o tym tricku centrowania przez pozycję absolute*/
+  /* transform: translate(-50%, -50%);  */
+  /* ta metoda jest lepsza niż ta #1 ^ */
+}
+.header-logo img {
+  height: 80%;
+}
 .header-logo:hover,
 .header-logo:active {
-  opacity: 0.5;
+  background-color: #ed6e2f;
 }
 
 /* HERO STYLES */
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
-}
-.full-hero:hover, 
-.full-hero:active {
-  background-color: #a71313;
 }
 
 /* SOCIAL STYLES */
