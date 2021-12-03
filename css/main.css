@@ -27,6 +27,7 @@ a {
 }
 p {
   line-height: 1.5;
+  margin: 0.85em 0;
 }
 h2 ~ p {
   font-size: 0.8em;
@@ -200,15 +201,22 @@ h2 ~ p {
 .home-callout {
 background-color: #000;
 color: #fff;
+display: flex;
+align-items: center;
 padding: 7vh 0;
 }
 .callout-title {
   font-size: 5.75vw;
   text-align: right;
   text-transform: uppercase;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 .callout-copy {
+  flex-basis: 45em;
+  flex-shrink: 0;
   font-size: 0.8rem;
+  padding: 0 3vw;
 }
 /* BIO STYLES */
 .bio-wrapper {
