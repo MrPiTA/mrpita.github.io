@@ -303,6 +303,11 @@ padding: 7vh 0;
 }
 .gallery-thumbs img:hover {
   opacity: 1;
+  width: 80%; /*animowane zmniejszanie się zdj po najechaniu*/
+}
+.gallery-thumbs .current img:hover {
+  cursor:default;
+  width: 100%;
 }
 .gallery-thumbs .current img {
   box-shadow: 0 0 0 5px #ed6e2f;
