@@ -6,6 +6,7 @@ author: Hank Moody
 authorTwitter: https://twitter.com/wisehankmoody
 gravatar: http://placekitten.com/150
 postFooter: Additional information, and maybe a <a href="#">link or two</a>
+footerAlign: center
 excerpt_separator: "<!--excerpt-->"
 ---
 
