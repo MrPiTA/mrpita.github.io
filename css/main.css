@@ -70,7 +70,7 @@ h2 ~ p {
 }
 .header-nav {
   float: right;
-  padding: 5.5vh 60px 0 0;
+  padding: 4vh 60px 0 0;
 }
 .header-nav > li {
   display: inline-block;
@@ -129,7 +129,7 @@ h2 ~ p {
 .content-container {
   height: 100%;
   display: flex;
-  direction: column;
+  flex-direction: column;
 }
 .col-three {
   display: flex;
@@ -465,4 +465,85 @@ padding: 7vh 0;
   padding-top: 2em;
   font-style: italic;
   font-size: 0.8em;
+}
+
+@media (max-width: 800px) {
+  html {
+    box-shadow: none;
+    padding: 0;
+  }
+  /*HEADER STYLES*/
+  .header-nav {
+    padding: 2vh 1em 0 0;
+  }
+  .header-nav > li {
+    padding-left: 0.25em;
+  }
+  .header-nav > li ~ li {
+    padding-left: 0.25em;
+  }
+  .nav-links a {
+    font-size: 3.25vw;
+  }
+  .header-logo {
+    left: auto;
+  }
+  /* HOME STYLES */
+  .home-callout {
+    flex-direction: column;
+  }
+  .callout-copy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex: 1;
+  }
+  /*BIO BOXES*/
+  .bio-box {
+    float: none;
+    width: auto;
+    font-size: 1.3rem;
+  }
+  /*BLOG STYLES*/
+  .page {
+    margin: 10vh auto 1em;
+  }
+  .blog-cols {
+    flex-direction: column;
+  }
+  .blog-recent {
+    flex: 1;
+    text-align: center;
+  }
+  .blog-previews {
+    padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+  /*GALLERY STYLES*/
+  .gallery {
+    flex-direction: column;
+  }
+  .gallery-thumbs {
+    display: flex;
+    flex: 1;
+    gap: 1em;
+  }
+  .gallery-thumbs > div {
+    cursor: pointer;
+    flex: 0 0 7vh;
+  }
+  .gallery .gallery-thumbs {
+    flex: 1;
+  }
+  .gallery .gallery-info {
+    flex: 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .half-hero {
+    display: none;
+  }
 }
