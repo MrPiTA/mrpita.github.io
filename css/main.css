@@ -4,7 +4,7 @@ html {
   padding: 0 30px;
 }
 body {
-  font-family: helvetica, arial, sans;
+  font-family: 'Open Sans', helvetica, arial, sans;
   line-height: 1;
   display: flex;
   flex-direction: column;
@@ -14,6 +14,10 @@ body {
   flex: 1 1 auto;
   padding-top: 10vh;
   width: 100%;
+}
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Raleway', helvetica, arial, sans;
+  font-weight: 100;
 }
 h1 {
   font-size: 7vw;
@@ -352,15 +356,15 @@ margin-bottom: 0.5em;
   color: #fff;
   display: inline-block;
   font-family: helvetica, arial, sans;
-  font-size: 1em;
+  font-size: 1.6em;
   font-weight: bold;
-  height: 2.5em;
+  height: 1.5em;
   line-height: 1;
-  padding-top: 0.85em;
+  padding-top: 0.25em;
   text-align: center;
   text-decoration: none;
   vertical-align: middle;
-  width: 2.5em;
+  width: 1.5em;
 }
 .social-list > li {
   display: inline-block;
@@ -429,7 +433,10 @@ padding: 7vh 0;
 }
 .bio-box h3 {
   color: #fff;
+  font-family: 'Cinzel', 'Raleway', Arial, Helvetica, sans-serif;
+  font-weight: 400;
   font-size: 1.5em;
+  text-shadow: 1px 2px black;
   margin: -40px 0 1em;
   text-align: center;
   text-transform: uppercase;
@@ -644,6 +651,7 @@ padding: 7vh 0;
   .header-nav .drop-trigger {
     padding: 0;
   }
+  
   .mobile-menu-check:checked ~ .header-nav {
     max-height: 1000px;
   }
